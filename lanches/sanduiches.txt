@@ -1,0 +1,10 @@
+xtudo
+10.00
+xsalada
+10.00
+bigtudo
+15.00
+xbacon
+14.00
+bigburguer
+20.00

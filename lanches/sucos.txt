@@ -1,0 +1,10 @@
+laranja
+8.00
+manga
+6.00
+uva
+6.00
+morango
+7.00
+maracuja
+5.00
