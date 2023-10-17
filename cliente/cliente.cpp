@@ -18,7 +18,7 @@ void listarSanduiches(){
     int k = 0;
 
     std::fstream arquivo;
-    arquivo.open("../lanches/sucos.txt");
+    arquivo.open("./lanches/sanduiches.txt");
 
     if (!arquivo.is_open()) {
         std::cerr << "Nao foi possivel abrir o arquivo." << std::endl;
@@ -31,10 +31,11 @@ void listarSanduiches(){
 
     arquivo.close();
 
+    std::cout << "Sanduiches: \n" << std::endl;
+
     for (size_t i = 0; i < linhas.size(); i++)
     {
-        std::cout << "Sanduiches: \n" 
-                  << i+1 << ": " << linhas[i + k++] << " - Valor: " << stof(linhas[i + 1]) << std::endl;
+        std::cout << i+1 << ": " << linhas[i + k++] << " - Valor: " << stof(linhas[i + 1 + k]) << std::endl;
     }
 
 }

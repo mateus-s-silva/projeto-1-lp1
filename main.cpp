@@ -7,20 +7,19 @@
 int main(int argc, char const *argv[])
 {
     bool acesso;
-    bool sair = true;
+    int sair = 0;
     std::string senha;
+    int option;
 
-    std::cout << "Seja bem-vindo.\n\n Digite 0 para acessar perfil de cliente.\n\n Digite 1 para acessar peril de gerente" << std::endl;
+    std::cout << "Seja bem-vindo.\n\n Digite 0 para acessar perfil de cliente.\n\n Digite 1 para acessar perfil de gerente.\n" << std::endl;
     
     std::cin >> acesso;
 
     if (!acesso)
     {
-        std::cout << "Perfil de cliente: " << std::endl;
-        while (sair)
-        {
-            int option;
-            
+        std::cout << "\nPerfil de cliente: " << std::endl;
+        while (true){
+
             std::cout << "\nEscolha uma opcao: " << std::endl;
 
             std::cout << "1 - Lista de sanduiches.\n"
@@ -52,7 +51,7 @@ int main(int argc, char const *argv[])
                 //excluirCarrinho();
             }
             else if(option == 0){
-                break;
+                sair = 1;
             }
             else{
                 std::cout << "Opcao invalida." << std::endl;
