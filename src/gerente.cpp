@@ -90,8 +90,8 @@ void alteraPrecoSanduiche(std::map<std::string, float> &sanduiches){
 
         sanduiches[sanduiche] = valor;
 
-        std::fstream arquivo("../lanches/sanduiches.txt");
-        arquivo.clear();
+        std::fstream arquivo("../lanches/sanduiches.txt", std::ios::out | std::ios::trunc);
+        
         if(!arquivo.is_open()){
             std::cout << "Nao ta abrindo papai" << std::endl;
         }
@@ -138,8 +138,8 @@ void alteraPrecoSuco(std::map<std::string, float> &sucos){
 
         sucos[suco] = valor;
 
-        std::fstream arquivo("../lanches/sucos.txt");
-        arquivo.clear();
+        std::fstream arquivo("../lanches/sucos.txt", std::ios::out | std::ios::trunc);
+
         if(!arquivo.is_open()){
             std::cout << "Nao ta abrindo papai" << std::endl;
         }

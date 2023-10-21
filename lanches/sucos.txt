@@ -1,5 +1,7 @@
 laranja
 8
+limao
+6.5
 manga
 6
 maracuja
@@ -7,6 +9,4 @@ maracuja
 morango
 7.5
 tamarindo
-9.90
-limao
-6.50
+10.50
